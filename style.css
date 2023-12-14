@@ -1,0 +1,234 @@
+/* making improts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+/* basic structure */
+.main-container{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    color:#000;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.container1{
+    background: linear-gradient(111.5deg, rgb(20, 100, 196) 0.4%, rgb(33, 152, 214) 100.2%);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.left_container1{
+    flex-basis: 67%;
+    border:2px white solid;
+    height: 97vh;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.right_container1{
+    flex-basis: 30%;
+    margin: 10px;
+    padding: 5px;
+    height: 97vh;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* css for actual styling */
+.heading{
+    font-size: 5rem;
+    text-shadow:2px 2px #000;
+    text-align: center;
+}
+.form_container{
+    display: inline-block;
+    align-items: center;
+    height: 20vh;
+    width: 95%;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    line-height: 15px;
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+input[type=search] {
+    width: 60%;
+    padding: 12px 20px;
+    margin:auto;
+    margin-top: 20px;
+    margin-left: 40px;
+    box-sizing: border-box;
+    border:blue 2px solid;
+    border-radius: 5px;
+  }
+
+  input[type=submit] {
+    padding: 10px 20px;
+    /* margin:auto;     */
+    margin-top: 22px;
+    border:blue 2px solid;
+    border-radius: 5px;
+    border: 2px solid darkblue;
+    color: #fff;
+    background-color: blue;
+    font-size: medium;
+    transition:ease 0.5s;
+  }
+  input[type=submit]:hover{
+    background-color:aqua;
+    color: black;
+  }
+
+  .right_container1 h1{
+    font-size: 3rem;
+    margin: 10px;
+    padding: 5PX;
+    text-shadow:2px 2px #000 ;
+  }
+
+  .right_container1 ol li{
+    font-size: 1.1rem;
+    text-shadow:1px 1px #000 ;
+  }
+
+  .right_container1 img{
+    height: 18rem;
+    width: 70%;
+    margin: 30px;
+  }
+  .form_container img{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 5rem;
+  }
+
+ 
+  .extra_container{
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  .extra_container a:link, a:visited {
+  background-color:blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  transition:ease 0.5s;
+
+  border: #000 0.5px solid;
+}
+
+.extra_container a:hover, a:active {
+  background-color:aqua;
+  color: black;
+}
+
+
+.left_container1{
+    background-image: url( '/path/image.svg' );
+    overflow: hidden;
+    background-size: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* css for the responsive design */
+
+@media(max-width:700px){  
+ 
+    .mainrow{
+      flex-direction: column;
+    } 
+    .left_container1{
+      flex-basis: 100%;   
+    } 
+    .right_container1{
+        flex-basis: 100%;   
+    } 
+    .right_container1{
+        height: auto;
+    }
+    .left_container1{
+        margin: 10px;
+        height: auto;
+        border-radius: 4px;
+    }
+    .left_container1 .heading{
+        font-size: 3rem;
+    }
+    .form_container img{
+        display:none;
+    }
+    .form_container{
+        padding: 0;
+        height: 6rem;
+        }
+}
+    
+
+@media(max-width:540px){  
+ 
+    .mainrow{
+      flex-direction: column;
+    } 
+    .left_container1{
+      flex-basis: 100%;   
+    } 
+    .right_container1{
+        flex-basis: 100%;   
+    } 
+    .right_container1{
+        height: auto;
+    }
+    .left_container1{
+        margin: 10px;
+        height: auto;
+        
+    }
+    .left_container1 .heading{
+        font-size: 3rem;
+    }
+    .form_container img{
+        display:none;
+    }
+}
